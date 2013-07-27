@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<meta http-equic="Content-Type" content="text/html"; charset="utf-8"/>
+		<title></title>
+		<link rel="stylesheet" href="blitzer/jquery-ui-1.10.3.custom.min.css">
+		<link rel="stylesheet" media="screen" type="text/css" href="css/colorpicker.css" />
+		<link rel="stylesheet" href="css/style.css">
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div id="param">
+			<h1>Parametres</h1>
+			<p>
+				<label for="spin_haut">Hauteur : </label>
+				<input type="text" id="spin_haut" value="150"/>
+
+				<label for="spin_larg">Largeur : </label>
+				<input type="text" id="spin_larg" value="150"/>
+			</p>
+			<div class="left">
+				<p class="left">Couleur du fond</p>
+				<input type="hidden" id="col_fond" value="cccccc">
+				<div id="customWidget">
+					<div id="colorSelector2"><div style="background-color: #cccccc"></div></div>
+		            <div id="colorpickerHolder2">
+		            </div>
+				</div>
+			</div>
+
+			<div class="pick_text">
+				<p class="left">Couleur du texte</p>
+				<input type="hidden" id="col_text" value="909090">
+				<div id="customWidget2">
+					<div id="colorSelector3"><div style="background-color: #909090"></div></div>
+		            <div id="colorpickerHolder3">
+		            </div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<p>
+				<label for="text">Texte : </label>
+				<input type="text" id="text">
+		</div>
+
+		<div class="clear"></div>
+		<div id="lien">
+			<a href="fakeimg.php" target="_blank">fakeimg.php</a>
+		</div>
+		<br />
+		<img src="fakeimg.php" id="img_result" alt="">
+	</body>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/colorpicker.js"></script>
+	<script src="js/main.js"></script>
+</html>
